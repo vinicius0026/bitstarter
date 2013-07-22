@@ -2,7 +2,7 @@
 <html lang = "en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>Bookworm</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -96,6 +96,12 @@
       .footer a{
         color: #ccccff;
       }
+      
+      /* Img resizing */
+      #resize {
+        height: 300px;
+        width: 480px;
+      }
     </style>
   </head>
   <body>
@@ -110,7 +116,7 @@
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	  </button>
-	  <a class="brand" href="#">Bitstarter</a>
+	  <a class="brand" href="#">Bookworm</a>
 	  <div class="nav-collapse collapse">
 	    <ul class="nav">
 	      <li class="active"><a href="#">Home</a></li>
@@ -131,19 +137,19 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
 	<div class="span12">
-	  <h1>Product</h1>
+	  <h1>Bookworm</h1>
 	</div>
       </div>
       <div class="row-fluid subheading">
 	<div class="span12">
 	  <!-- Special typography from Bootstrap for lead paragraph. -->
 	  <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-	  <p class="lead">One sentence description.</p>
+	  <p class="lead">Read it. Rate it. Share it.</p>
 	</div>
       </div>
       <div class="row-fluid pitch">
 	<div class="span5 offset1 video">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	  <img class="img-polaroid" src="http://www.newyorker.com/online/blogs/photobooth/Books-06.jpg">
 	</div>
 
 	<!-- We define a new 'actions' div to contain statistcs, order, and share buttons. -->
@@ -160,12 +166,12 @@
 	      </div>
 	      <div class="span4">
 		<div class="linediv-c">
-		  <h3>$6000</h3> <p>of $10,000</p>
+		  <h3>$60000</h3> <p>of $100,000</p>
 		</div>
 	      </div>
 	      <div class="span4">
 		<div class="linediv-r">
-		  <h3>10</h3> <p>days left</p>
+		  <h3>30</h3> <p>days left</p>
 		</div>
 	      </div>
 	    </div>
@@ -181,7 +187,7 @@
 	  <div class="span8 offset2 social">
 	    <!-- Standard Bootstrap button. -->
 	    <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-	    <button class="btn btn-success btn-large">Preorder</button>
+	    <button class="btn btn-success btn-large">Contribute</button>
 	  </div>
 	  <div class="span8 offset2 social">
 	    <!-- Social buttons are not included in default Bootstrap. -->
@@ -198,21 +204,20 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
 	<div class="span5 offset1 asset">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	  <img class="img-polaroid" src="http://www.thefamilygroove.com/images/BookExchange.jpg" id="resize">
 	</div>
 	<div class="span5 copy">
 	  <p>
-	    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-	    Aenean a nisl velit. Sed convallis, tellus et hendrerit 
-	    fringilla, mauris elit tristique nunc, sed aliquam neque
-	    neque sit amet purus. Integer sollicitudin accumsan lorem, 
-	    in aliquam mi lacinia sed. Nulla lacinia tellus sit amet 
-	    ante egestas, quis viverra nisl vulputate. Morbi in nibh 
-	    egestas libero convallis fermentum. Curabitur lobortis at 
-	    diam quis pellentesque. Vestibulum vitae velit quis nisi
-	    feugiat interdum. Nullam porta nibh turpis, id fringilla
-	    arcu commodo in. Cum sociis natoque penatibus et magnis
-	    dis parturient montes, nascetur ridiculus mus.
+	    For people who love reading and are always looking for 
+	    the next book to read, Bookworm is as social app that
+	    matches the books you loved with those other people loved,
+	    in order to give you the perfect recommendation.
+	  </p>
+	  <p>
+	    With Bookworm you will be able to catalog the books you own
+	    and find people near you who have books you might be interested in,
+	    and who  also might be interested in some book you have, so that
+	    you could exchange books!
 	  </p>
 	</div>	  
       </div>
@@ -220,21 +225,23 @@
       <div class="row-fluid section2">
 	<div class="span5 offset1 copy copy-right">
 	  <p>
-	    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-	    Aenean a nisl velit. Sed convallis, tellus et hendrerit
-	    fringilla, mauris elit tristique nunc, sed aliquam neque
-	    neque sit amet purus. Integer sollicitudin accumsan lorem, 
-	    in aliquam mi lacinia sed. Nulla lacinia tellus sit amet
-	    ante egestas, quis viverra nisl vulputate. Morbi in nibh
-	    egestas libero convallis fermentum. Curabitur lobortis at
-	    diam quis pellentesque. Vestibulum vitae velit quis nisi
-	    feugiat interdum. Nullam porta nibh turpis, id fringilla
-	    arcu commodo in. Cum sociis natoque penatibus et magnis
-	    dis parturient montes, nascetur ridiculus mus.
+	    It works like this:
 	  </p>
+	  <ul>
+	    <li>You rate some books you have read.</li>
+	    <li>Based on your preferences, Bookworm generates a
+	      <em>must read</em> list of books you would love.</li>
+	    <li>You may also catalog the books you own.</li>
+	    <li>Bookworm will find users near you that have books which
+	      are in your reading list. If you possess some book that might
+	      be interesting to them as well, you can get in touch via
+	      Bookworm to exchange the books. Bookworm will even keep
+	      track of the books you lended so that you won't forget
+	      to get them back.</li>
+	  </ul>
 	</div>	  
 	<div class="span5 asset">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	  <img class="img-polaroid" src="http://www.odt.co.nz/files/story/2010/02/getting_their_textbooks_at_discounted_prices_from__7198923374.JPG">
 	</div>
       </div>
       
@@ -248,24 +255,27 @@
 	    <div class="accordion-group">
 	      <div class="accordion-heading">
 		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		  What does FAQ stand for?
+		  How is this different from existing services like goodreads?
 		</a>
 	      </div>	      
 	      <div id="collapseOne" class="accordion-body collapse">
 		<div class="accordion-inner">
-		  Frequently Asked Question.
+		  You will be able to find people to exchange books, people that
+		  you might not know, who have similar interests. You might make
+		  new friends along the way!
 		</div>
 	      </div>
 	    </div>
 	    <div class="accordion-group">
 	      <div class="accordion-heading">
 		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-		  What's a Frequently Asked Question?
+		  How will this app monetize in the long run?
 		</a>
 	      </div>
 	      <div id="collapseTwo" class="accordion-body collapse">
 		<div class="accordion-inner">
-		  A question which is commonly asked by users.
+		  It's not only about book lending, but about recommendations. So Bookworm will
+		  monetize through bookstores advertising, links to buying books, and the like.
 		</div>
 	      </div>
 	    </div>
